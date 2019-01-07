@@ -1,0 +1,59 @@
+body {
+  background-color: darkgrey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: none;
+  padding:  15px 30px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.modal-wrapper{
+  padding: 10px;
+  border-radius: 3px;
+  position: absolute;
+  width: 50%;
+  max-width: 300px;
+  top: 50%;
+  background-color: dimgray;
+  box-shadow: -4px 8px 21px -6px rgba(0,0,0,0.46);
+}
+
+.close{
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.modal-top{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-bottom{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: azure;
+}
